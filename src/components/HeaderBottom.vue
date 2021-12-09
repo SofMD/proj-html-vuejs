@@ -49,6 +49,9 @@ section {
                 color: $greenLima;
                 cursor: pointer;
             }
+            li:first-child{
+                color: $greenLima;
+            }
 
             .headerButton{
                 background-color: $buttoncolor;

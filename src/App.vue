@@ -9,7 +9,13 @@
       
     </header>
 
-    <main></main>
+    <main>
+      <!-- 1 -->
+      <HeroSection/>
+      <!-- 2 -->
+      <BluBar/>
+
+    </main>
 
     <footer></footer>
 
@@ -19,12 +25,16 @@
 <script>
 import HeaderTop from '@/components/HeaderTop.vue';
 import HeaderBottom from '@/components/HeaderBottom.vue';
+import HeroSection from '@/components/HeroSection.vue';
+import BluBar from '@/components/BluBar.vue';
 
 export default {
   name: 'App',
   components: {
      HeaderTop,
      HeaderBottom,
+     HeroSection,
+     BluBar,
 
   }
 }

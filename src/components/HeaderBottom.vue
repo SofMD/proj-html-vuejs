@@ -14,7 +14,7 @@
                   <li class="ms-4">FAQ</li>
                   <li class="ms-4">Blog</li>
                   <li class="ms-4">Contact</li>
-                  <li class="ms-5 "> <button class="headerButton">Free Quote</button></li>
+                  <li class="ms-5 "> <button class="Buttons">Free Quote</button></li>
               </ul>
           </div>
       </div>
@@ -53,16 +53,7 @@ section {
                 color: $greenLima;
             }
 
-            .headerButton{
-                background-color: $buttoncolor;
-                padding: 5px 25px;
-                border-radius: 25px;
-                border: none;
-                color: white;
-                text-transform: uppercase;
-                font-weight: 800;
-                cursor: pointer;
-            }
+            
             
         }
     }

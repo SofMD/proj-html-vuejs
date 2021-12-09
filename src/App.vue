@@ -5,6 +5,7 @@
       <!-- top -->
       <HeaderTop/>
       <!-- bottom -->
+      <HeaderBottom/>
       
     </header>
 
@@ -17,11 +18,13 @@
 
 <script>
 import HeaderTop from '@/components/HeaderTop.vue';
+import HeaderBottom from '@/components/HeaderBottom.vue';
 
 export default {
   name: 'App',
   components: {
      HeaderTop,
+     HeaderBottom,
 
   }
 }

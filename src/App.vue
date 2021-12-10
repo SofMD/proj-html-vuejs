@@ -20,6 +20,8 @@
       <ServiceSection/>
       <!-- 5 -->
       <MoveEasySection/>
+      <!-- 6 -->
+      <TestimonialSection/>
 
     </main>
 
@@ -36,6 +38,8 @@ import BluBar from '@/components/BluBar.vue';
 import AwardSection from '@/components/AwardSection.vue';
 import ServiceSection from '@/components/ServiceSection.vue';
 import MoveEasySection from '@/components/MoveEasySection.vue';
+import TestimonialSection from '@/components/TestimonialSection.vue';
+
 
 export default {
   name: 'App',
@@ -47,6 +51,7 @@ export default {
      AwardSection,
      ServiceSection,
      MoveEasySection,
+     TestimonialSection,
   }
 }
 </script>

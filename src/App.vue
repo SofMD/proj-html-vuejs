@@ -22,6 +22,8 @@
       <MoveEasySection/>
       <!-- 6 -->
       <TestimonialSection/>
+      <!-- 7 -->
+      <FreeQuoteSection/>
 
     </main>
 
@@ -39,6 +41,7 @@ import AwardSection from '@/components/AwardSection.vue';
 import ServiceSection from '@/components/ServiceSection.vue';
 import MoveEasySection from '@/components/MoveEasySection.vue';
 import TestimonialSection from '@/components/TestimonialSection.vue';
+import FreeQuoteSection from '@/components/FreeQuoteSection.vue';
 
 
 export default {
@@ -52,6 +55,7 @@ export default {
      ServiceSection,
      MoveEasySection,
      TestimonialSection,
+     FreeQuoteSection,
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="TestContainer">
+      <div class="TestContainer mb-5">
            <div class="Awsubtitle">happy customers</div>
           <h2>Testimonials</h2>
 

@@ -1,0 +1,44 @@
+.l-st {
+    list-style: none;
+  }
+  
+  .Awsubtitle{
+    font-weight: bold;
+    color: $lightgrey;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+  }
+  
+  h2{
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 900;
+    color: $greenLima;
+    font-size: 45px;
+    letter-spacing: -2px;
+    line-height: 1.2;
+  }
+  
+  h3{
+    color: $buttoncolor;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  
+  .description{
+    color: $maintext;
+    margin: 10px 0;
+  }
+  
+  .Buttons{
+      background-color: $buttoncolor;
+      padding: 5px 25px;
+      border-radius: 25px;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 800;
+      cursor: pointer;
+      letter-spacing: 1px;
+  }

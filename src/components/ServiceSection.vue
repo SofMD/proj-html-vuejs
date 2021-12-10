@@ -9,7 +9,7 @@
               <!-- card -->
               <div class="serviceCard" v-for="(el, index) in serviceList" :key="`service-${index}`">
 
-                  <ServiceCards :src="el.src" :title="el.title" :description="el.description" :button="el.button" />
+                  <Cards :src="el.src" :title="el.title" :description="el.description" :button="el.button" />
                   
               </div>
               
@@ -20,13 +20,13 @@
 </template>
 
 <script>
-import ServiceCards from '@/components/ServiceCards.vue';
+import Cards from '@/components/Cards.vue';
 
 export default {
     name: 'ServiceSection',
 
     components: {
-        ServiceCards,
+        Cards,
     },
 
     data(){

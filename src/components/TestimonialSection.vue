@@ -7,31 +7,9 @@
           <!-- card section -->
           <div class="d-flex justify-content-between pt-5">
               <!-- card -->
-              <div class="serviceCard">
-                  <!-- image -->
-                  <img src="../assets/avada-movers-johndoe-final.jpg" alt="">
-                  <!-- title -->
-                  <h3 class="mt-4" >John Doe</h3>
-                  <!-- description -->
-                  <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!</div>
+              <div class="testCard" v-for="(el, index) in testimonialsList" :key="`service-${index}`">
 
-              </div>
-              <!-- card 2-->
-              <div class="serviceCard">
-                  <!-- image -->
-                  <img src="../assets/avada-movers-janedoe-final.jpg" alt="">
-                  <h3  class="mt-4">Jane Doe</h3>
-                  <!-- description -->
-                  <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!</div>
-
-              </div>
-              <!-- card 3-->
-              <div class="serviceCard">
-                  <!-- image -->
-                  <img src="../assets/avada-movers-johnsmith-final.jpg" alt="">
-                  <h3 class="mt-4">John Smith</h3>
-                  <!-- description -->
-                  <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!</div>
+                  <TestimonialsCards :src="el.src" :title="el.title" :description="el.description"/>
 
               </div>
           </div>
@@ -44,8 +22,35 @@
 </template>
 
 <script>
+import TestimonialsCards from '@/components/TestimonialsCards.vue';
+
 export default {
     name: 'TestimonialSection',
+    components: {
+        TestimonialsCards,
+    },
+
+    data(){
+        return {
+            testimonialsList: [
+                {
+                    src: require('../assets/avada-movers-johndoe-final.jpg'),
+                    title: 'John Doe',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!',
+                },
+                {
+                    src: require('../assets/avada-movers-janedoe-final.jpg'),
+                    title: 'Jane Doe',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!',
+                },
+                {
+                    src: require('../assets/avada-movers-johnsmith-final.jpg'),
+                    title: 'John Smith',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!',
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -61,7 +66,7 @@ section{
     margin: 0 auto;
     text-align: center;
 
-    .serviceCard{
+    .testCard{
 
             img {
                 width: 140px;

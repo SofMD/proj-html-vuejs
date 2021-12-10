@@ -12,8 +12,10 @@
 </template>
 
 <script>
+
+
 export default {
-    name: 'ServiceCards',
+    name: 'Cards',
 
     props: {
         src: String,
@@ -37,5 +39,5 @@ export default {
                 margin: 10px auto;
                 font-size: 15px;
             }
-        }
+}
 </style>

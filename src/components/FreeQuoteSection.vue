@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/components/variables.scss';
+
 
 section{
     margin-top: 120px;

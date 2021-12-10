@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="d-flex align-items-center justify-content-center">
       <div class="HeroTitle">
           <div>MOVING WITHOUT THE HASSLE</div>
           <h1>WE MAKE IT SIMPLE</h1>
@@ -19,15 +19,16 @@ export default {
 @import '@/components/variables.scss';
 
 section {
+    background-image: url('../assets/avada-movers-homeherobackground-final.jpg');
+    height: 610px;
+    background-size: cover; 
 
     .HeroTitle{
         text-align: center;
-        margin: 200px 0;
-
         div{
-            font-weight: bold;
+            font-weight: 900;
             color: $heroText;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         h1{

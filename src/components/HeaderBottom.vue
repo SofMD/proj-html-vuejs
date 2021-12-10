@@ -42,7 +42,7 @@ section {
         }
 
         .headerList{
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 800;
 
             li:hover{

@@ -27,7 +27,9 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+       <Footer/>
+    </footer>
 
   </div>
 </template>
@@ -42,6 +44,7 @@ import ServiceSection from '@/components/ServiceSection.vue';
 import MoveEasySection from '@/components/MoveEasySection.vue';
 import TestimonialSection from '@/components/TestimonialSection.vue';
 import FreeQuoteSection from '@/components/FreeQuoteSection.vue';
+import Footer from '@/components/Footer.vue';
 
 
 export default {
@@ -56,6 +59,7 @@ export default {
      MoveEasySection,
      TestimonialSection,
      FreeQuoteSection,
+     Footer,
   }
 }
 </script>

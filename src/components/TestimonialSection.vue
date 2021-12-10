@@ -9,7 +9,7 @@
               <!-- card -->
               <div class="serviceCard">
                   <!-- image -->
-                  <img src="../assets/avada-movers-janedoe-final.jpg" alt="">
+                  <img src="../assets/avada-movers-johndoe-final.jpg" alt="">
                   <!-- title -->
                   <h3 class="mt-4" >John Doe</h3>
                   <!-- description -->
@@ -19,7 +19,7 @@
               <!-- card 2-->
               <div class="serviceCard">
                   <!-- image -->
-                  <img src="../assets/avada-movers-johndoe-final.jpg" alt="">
+                  <img src="../assets/avada-movers-janedoe-final.jpg" alt="">
                   <h3  class="mt-4">Jane Doe</h3>
                   <!-- description -->
                   <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed ipsa soluta dignissimos, et quam reprehenderit vero explicabo voluptatum provident!</div>

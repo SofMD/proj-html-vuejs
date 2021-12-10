@@ -8,12 +8,9 @@
           <!-- lista -->
           <div>
               <ul class="headerList l-st d-flex justify-content-end align-items-center">
-                  <li class="ms-4">Home</li>
-                  <li class="ms-4">Rates</li>
-                  <li class="ms-4">Testimonials</li>
-                  <li class="ms-4">FAQ</li>
-                  <li class="ms-4">Blog</li>
-                  <li class="ms-4">Contact</li>
+                  <!-- menu dinamico  -->
+                  <li class="ms-4" v-for="(el, index) in menuList" :key="`menu-${index}`">{{el}}</li>
+                <!-- bottone -->
                   <li class="ms-5 "> <button class="Buttons">Free Quote</button></li>
               </ul>
           </div>
@@ -24,6 +21,18 @@
 <script>
 export default {
     name: 'HeaderBottom',
+    data() {
+        return {
+            menuList: [
+                'Home',
+                'Rates',
+                'Testimonials',
+                'FAQ',
+                'Blog',
+                'Contact',
+            ]
+        }
+    }
 }
 </script>
 

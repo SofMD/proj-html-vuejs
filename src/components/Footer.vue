@@ -37,8 +37,21 @@
           </div>
       </div>
       <!-- sotto -->
-      <div class="footerbottom">
-          bla bla
+      <div class="footerbottom p-4">
+          <div class="fbContainer">
+              <div>&copy; Copyright 2021-2020  |  Avada Theme by ThemeFusion  |  All Rights Reserved  |  Powered by WordPress</div>
+
+              <div class="mt-3">
+                  <ul class="socialList l-st d-flex justify-content-center">
+                       <li class="ms-3"><i class="fab fa-facebook-f"></i></li>
+                       <li class="ms-3"><i class="fab fa-twitter"></i></li>
+                       <li class="ms-3"><i class="fab fa-instagram"></i></li>
+                       <li class="ms-3"><i class="fab fa-youtube"></i></li>
+                  </ul>
+               </div>
+
+
+          </div>
       </div>
       
   </section>
@@ -63,10 +76,6 @@ section{
         font-size: 18px;
     }
 
-    i {
-        font-size: 10px;
-    }
-
     .footerTop{
         background-color: white;
         border-top: 20px solid $greenLima;
@@ -75,6 +84,10 @@ section{
         .ftContainer{
             width: 50%;
             margin-left: 15%;
+
+            i {
+               font-size: 10px;
+            }
 
             p{
                 width: 300px;
@@ -97,6 +110,18 @@ section{
 
     .footerbottom{
         background-color: $greenLima;
+
+        .fbContainer{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+
+        i{
+            font-size: 18px;
+        }
     }
 }
 </style>

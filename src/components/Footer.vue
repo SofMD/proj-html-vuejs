@@ -14,11 +14,7 @@
               <div>
                   <h4 class="fotTitle">Avada movers</h4>
                   <ul class="l-st">
-                      <li><i class="fas fa-chevron-right"></i> Home</li>
-                      <li><i class="fas fa-chevron-right"></i> Rates</li>
-                      <li><i class="fas fa-chevron-right"></i> Testimonials</li>
-                      <li><i class="fas fa-chevron-right"></i> Blog</li>
-                      <li><i class="fas fa-chevron-right"></i> Free Quote</li>
+                      <li v-for="(el, index) in AvadaMoversList" :key="`avada-${index}`"> <i class="fas fa-chevron-right"></i> {{el}}</li>
                   </ul>
               </div>
 
@@ -26,11 +22,7 @@
               <div >
                   <h4 class="fotTitle">recent posts</h4>
                   <ul class="l-st">
-                      <li><i class="fas fa-chevron-right"></i> Heading Out To College?</li>
-                      <li><i class="fas fa-chevron-right"></i> Moving Your Business?</li>
-                      <li><i class="fas fa-chevron-right"></i> Outstanding Quality</li>
-                      <li><i class="fas fa-chevron-right"></i> Cost of Moving</li>
-                      <li><i class="fas fa-chevron-right"></i> Best Moving Tips</li>
+                       <li v-for="(el, index) in recentPostList" :key="`avada-${index}`"> <i class="fas fa-chevron-right"></i> {{el}}</li>
                   </ul>
               </div>
 
@@ -60,6 +52,26 @@
 <script>
 export default {
     name: 'Footer',
+
+    data(){
+        return{
+            AvadaMoversList: [
+                'Home',
+                'Rates',
+                'Testimonials',
+                'Blog',
+                'Free Quote',
+            ],
+
+            recentPostList: [
+                'Heading Out To College?',
+                'Moving Your Business?',
+                'Outstanding Quality',
+                'Cost of Moving',
+                'Best Moving Tips',
+            ]
+        }
+    }
 }
 </script>
 
@@ -121,6 +133,14 @@ section{
 
         i{
             font-size: 18px;
+        }
+
+        li{
+          cursor: pointer;
+          transition: all .2s
+        }
+        li:hover{
+          transform: scale(1.5);
         }
     }
 }

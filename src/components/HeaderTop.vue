@@ -42,6 +42,10 @@ section {
       .socialList{
         li{
           cursor: pointer;
+          transition: all .2s
+        }
+        li:hover{
+          transform: scale(1.5);
         }
       }
   }

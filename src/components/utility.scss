@@ -41,4 +41,8 @@
       font-weight: 800;
       cursor: pointer;
       letter-spacing: 1px;
+      transition: all .2s
+  }
+  .Buttons:hover{
+    transform: scale(1.1);
   }
